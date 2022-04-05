@@ -5,8 +5,24 @@
 
 body {
   font-family: 'Noto Sans KR', sans-serif;
+  font-weight: 700;
+}
+
+header{
   font-weight: 500;
 }
+
+.nav-bottom{
+  background-color: #27503e;
+}
+
+
+.nav-bottom img{
+  width: 55px;
+  height:35px;
+  object-fit: cover;
+}
+
 
 
 /*

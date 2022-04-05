@@ -1,6 +1,6 @@
 #main-page{
   background-color: white;
-  color: #00654F;
+  color: #27503e;
 }
 
 #main-dark-page{
@@ -11,6 +11,7 @@
 .press-font{
   font-family: 'Press Start 2P', cursive;
 }
+
 
 #main-dark-page .nav-item:not(.nav-item:last-child){
   font-size:12px;
