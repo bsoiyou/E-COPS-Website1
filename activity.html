@@ -50,7 +50,7 @@
           class="nav-top__title navbar-brand align-middle text-reset"
           href="main.html"
         >
-          <h1 class="ms-2 fs-3">E-COPS</h1>
+          <img class="ms-2" src="images/로고그린.png" />
         </a>
         <!-- 모바일 nav bar 버튼 -->
         <button
@@ -71,20 +71,20 @@
         >
           <ul class="nav-list navbar-nav ms-auto mb-2 mb-lg-0">
             <li class="nav-item mx-3">
-              <a class="nav-link active text-reset" href="main.html">Home</a>
+              <a class="nav-link active" href="main.html">Home</a>
             </li>
             <li class="nav-item mx-3">
-              <a class="nav-link text-reset" href="members.html">Members</a>
+              <a class="nav-link" href="members.html">Members</a>
             </li>
             <li class="nav-item mx-3">
-              <a class="nav-link text-reset" href="#">Activity</a>
+              <a class="nav-link nav-link__dark" href="#">Activity</a>
             </li>
             <li class="nav-item mx-3">
-              <a class="nav-link text-reset" href="recruit.html">Recruit</a>
+              <a class="nav-link" href="recruit.html">Recruit</a>
             </li>
             <li class="nav-item ms-3">
               <!-- mode 변경 버튼 -->
-              <a class="nav-link text-reset" href="activity-dark.html">
+              <a class="nav-link nav-link__dark" href="activity-dark.html">
                 <i class="fas fa-shield-alt fa-lg"></i>
               </a>
             </li>
@@ -102,10 +102,90 @@
       </div>
     </header>
 
-    <main class="main-screen">
-      <div class="main-screen__item main-introbox"></div>
-      <div class="main-screen__item main-introbox"></div>
+    <!-- ========= main 본문 ========== -->
+    <main
+      class="main-screen d-flex flex-column align-items-center justify-content-center mt-5"
+    >
+      <!-- 소개 -->
+      <div class="main-item d-flex flex-column justify-content-center">
+        <!-- 소개-제목 -->
+        <h1 class="main-item__title fs-2">소개</h1>
+        <!-- 소개-내용 -->
+        <div
+          class="main-item__content p-5 d-flex flex-column justify-content-center align-items-center"
+        >
+          <!-- 동그라미-->
+          <!-- 이미지 색감 조정! -->
+          <img class="main-circle" src="images/light-circle-text.png" />
+          <!-- 텍스트 -->
+          <p class="main-text fs-5 line-height-2 text-center">
+            <!-- 모바일 줄바뀜 해결하기! -->
+            E-COPS(EWHA-CONTROL OF PROGRAM SECURITY)는<br />
+            보안에 대해 공부하고 싶은 학생들의 자발적인 스터디로부터 시작하여<br />
+            이화여자대학교 경력개발센터에 우수 동아리로 이름을 올렸으며,<br />
+            이화여자대학교 인재개발원 커리어클럽에 소속되어 <br />
+            활발한 활동을 펼쳐가고 있는 정보보안 동아리입니다.
+          </p>
+        </div>
+        <!-- 소개-주요 활동 -->
+        <div class="main-item__content main-icons d-flex flex-column p-5">
+          <!-- 아이콘 1행 -->
+          <div class="main-icons__row d-flex">아이콘 1행</div>
+          <!-- 아이콘 2행 -->
+          <div class="main-icons__row d-flex">아이콘 2행</div>
+        </div>
+      </div>
+      <!-- 소개 -->
+
+      <!-- 연혁 -->
+      <div class="main-item d-flex flex-column justify-content-center">
+        <!-- 연혁-제목 -->
+        <h1 class="main-item__title fs-2">연혁</h1>
+        <!-- 연혁-내용 -->
+        <div class="main-item__content p-5">
+          <!-- 텍스트 -->
+          <p class="main-text fs-5 line-height-2 text-center">
+            E-COPS(EWHA-CONTROL OF PROGRAM SECURITY)는 보안에 대해 공부하고 싶은
+            학생들의 자발적인 스터디로부터 시작하여, 이화여자대학교
+            경력개발센터에 우수 동아리로 이름을 올렸으며, 이화여자대학교
+            인재개발원 커리어클럽에 소속되어 활발한 활동을 펼쳐가고 있는
+            정보보안 동아리입니다.
+          </p>
+        </div>
+      </div>
+      <!-- 연혁 -->
+
+      <!-- 로드맵 -->
+      <div class="main-item d-flex flex-column justify-content-center">
+        <!-- 로드맵-제목 -->
+        <h1 class="main-item__title fs-2">2022 RoadMap</h1>
+        <!-- 로드맵-내용 -->
+        <div class="main-item__content d-flex p-5">
+          <!-- timeline 부분 -->
+          <div class="main-timeline">
+            <div class="main-timeline__circle"></div>
+            <div class="main-timeline__circle"></div>
+            <div class="main-timeline__circle"></div>
+          </div>
+          <!-- 글씨 부분 -->
+          <div class="main-text d-flex">
+            <!-- 날짜 -->
+            <div class="main-text d-flex flex-column me-5">
+              <h3>2022-1</h3>
+              <h3>2022-2</h3>
+            </div>
+            <!-- 일정 -->
+            <div class="main-text d-flex flex-column">
+              <h3>2022-1</h3>
+              <h3>2022-2</h3>
+            </div>
+          </div>
+        </div>
+        <!-- 로드맵-내용 -->
+      </div>
+      <!-- 로드맵 -->
     </main>
+    <!-- ========= main 본문 ========== -->
 
     <footer>
       <h3>Message to JOIN</h3>

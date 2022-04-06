@@ -65,10 +65,24 @@
   margin-bottom: 40px;
 }
 
+
+/* icons */
+
+
+.main-icons__icon{
+  width:110px;
+  height:110px;
+  object-fit: cover;
+  margin-bottom: 20px;
+}
+
+
+
+/* ------로드맵 timeline------ */
 .main-timeline{
   background-color: #007442;
   width: 9px;
-  height:200px;
+  height:300px;
   position: relative;
   border-radius: 4px;
   margin-right:50px;
@@ -85,20 +99,26 @@
 }
 
 .main-timeline .main-timeline__circle:first-child{
-  top: 20px;
+  top: 30px;
 }
 
 .main-timeline .main-timeline__circle:nth-child(2){
-  top: 70px;
+  top: 100px;
 }
 
 .main-timeline .main-timeline__circle:last-child{
-  top: 150px;
+  top: 250px;
+}
+
+.main-text h3{
+  margin-bottom:50px;
 }
 
 main p{
   line-height:40px;
 }
+
+
 
 /* message to join 버튼처럼 하려면
 footer h3{

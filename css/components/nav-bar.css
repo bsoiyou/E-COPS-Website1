@@ -1,0 +1,46 @@
+.nav-bottom{
+  background-color: #27503e;
+}
+
+
+.nav-bottom img{
+  width: 55px;
+  height:35px;
+  object-fit: cover;
+}
+
+.navbar-brand{
+  height:40px;
+}
+
+.navbar-brand img{
+  width:45px;
+  height:45px;
+  padding:0;
+  position:absolute;
+  top:-2px;
+}
+
+.nav-top__container{
+  position:relative;
+}
+
+
+
+/* -------main 페이지 nav 버튼 색상-------- */
+
+/* 연한 색 */
+.nav-item .nav-link{
+  color:#497c66;
+}
+.nav-item .nav-link:hover{
+  color: #27503e;
+}
+
+/* 진한 색 */
+.nav-item .nav-link__dark{
+  color:#27503e;
+}
+.nav-item .nav-link__dark:hover{
+  color: #497c66;
+}

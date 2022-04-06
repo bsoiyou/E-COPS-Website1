@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@500;700&family=Press+Start+2P&display=swap');
 @import "screens/main.css";
-@import "components/*.css";
+@import "components/nav-bar.css";
 
 
 body {
@@ -12,13 +12,3 @@ header{
   font-weight: 500;
 }
 
-.nav-bottom{
-  background-color: #27503e;
-}
-
-
-.nav-bottom img{
-  width: 55px;
-  height:35px;
-  object-fit: cover;
-}
