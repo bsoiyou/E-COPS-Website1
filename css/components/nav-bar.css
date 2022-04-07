@@ -2,6 +2,14 @@
   background-color: #27503e;
 }
 
+/* dark 하단바 */
+/* 이미지 넣기 */
+.nav-bottom__dark{
+  background-color: black;
+  /* background-image: url("images/light-circle-text.png"); 
+  background-size: auto; */
+} 
+
 
 .nav-bottom img{
   width: 55px;
@@ -27,6 +35,7 @@
 
 
 
+
 /* -------main 페이지 nav 버튼 색상-------- */
 
 /* 연한 색 */
@@ -46,14 +55,22 @@
 }
 
 /* dark 모드 navbar 색상*/
-/* 진한 색 */
-/* .nav-item .nav-link__white{
+/* 하얀 색 */
+.nav-item .nav-link__white{
+  color:#ffffff;
+}
+.nav-item .nav-link__white:hover{
+  color: #3f906e;
+}
+
+/* 초록색 */
+.nav-item .nav-link__green{
+  color: #3f906e;
+}
+.nav-item .nav-link__green:hover{
   color:#ffffff;
 }
 
-.nav-item .nav-link__white:hover{
-  color: #3f906e;
-} */
 
 
 /* nav bar모바일 버튼 색상 조정*/
@@ -66,6 +83,16 @@
 .navbar-toggler:focus {
   box-shadow: none;
 }
+
+/* dark모드 모바일 버튼 색상 */
+.dark-page .navbar-toggler .navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgb(255,255,255)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+}
+
+.dark-page .navbar-toggler .navbar-toggler-icon:hover {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgb(63,144,110)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+}
+
 
 /* 메뉴바 테두리 */
 /* .navbar-toggler.navbar-toggler {

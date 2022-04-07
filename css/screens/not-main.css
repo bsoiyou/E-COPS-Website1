@@ -2,6 +2,10 @@
   background-color: #27503e;
 }
 
+.not-main-screen__dark{
+  background-color: #000000;
+}
+
 .pdf-img{
   background-color: white;
   width:90%;
