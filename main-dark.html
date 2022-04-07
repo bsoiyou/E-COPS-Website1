@@ -40,7 +40,7 @@
    <link rel="stylesheet" href="css/style.css"/>
   </head>
  
-  <body id="main-dark-page" class="dark-page">
+  <body id="main-dark-page" class="dark-page main-page">
      <!-- ======== 상단 nav bar ======== -->
      <nav class="nav-top navbar navbar-expand-lg bg-black sticky-top py-3 px-2 ">
 
@@ -83,16 +83,26 @@
       </div> <!-- nav bar container -->
     </nav> <!-- ======== 상단 nav bar ======== -->
    
-    <header class="main-banner d-flex align-items-center py-3">
-      <div class="main-banner__container container-fluid d-flex flex-column align-items-center">
-        <h2 class="main-banner__text text-center text-light fs-4">이화여자대학교 정보보안 동아리</h2>
-        <div class="main-banner__logo text-center m-1">
+
+    <!-- ======== dark 메인 배너 ======== -->
+    <header class="main-banner d-flex container-fluid p-0 align-items-center">
+      <!-- 배너 배경 이미지 -->
+      <img class="main-banner__img" src="images/dark-mode-bg.png">
+      <!-- 배너 내용 -->
+      <div class="main-banner__container row d-flex align-items-center">
+        <!-- 배너 로고 -->
+        <div class="main-banner__logo text-center m-1 col-lg-5">
           <img src="images/로고흰색.png"/>
         </div>
-        <h1 class="main-banner__text text-center text-light fs-1">E-COPS</h2>
-        <!--버튼 추가?-->
+        <!-- 배너 텍스트 -->
+        <div class="main-banner__text press-font col-lg p-0 pe-lg-5">
+          <h2 class="text-center text-lg-end text-light fs-5 mb-4">catchphrase catchphrase</h2>
+          <h2 class="text-center text-lg-end text-light fs-5 mb-4">catchphrase</h2>
+          <h1 class="text-center text-lg-end text-light fs-2">E-COPS</h2>
+        </div>
       </div>
-    </header>
+    </header> <!-- ======== dark 메인 배너 ======== -->
+    
 
     <!-- ========= main 본문 ========== -->
     <main class="main-screen d-flex flex-column align-items-center justify-content-center mt-5">
