@@ -1,0 +1,11 @@
+.not-main-screen{
+  background-color: #27503e;
+}
+
+.pdf-img{
+  background-color: white;
+  width:90%;
+  height:1000px;
+  margin: 50px 0px;
+  border-radius: 40px;
+}

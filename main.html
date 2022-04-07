@@ -53,6 +53,7 @@
           <h1 class="ms-2 fs-3">E-COPS</h1>
         </a>
         <!-- 모바일 nav bar 버튼 -->
+        <!-- 모드 변경 버튼 빼기? -->
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
         aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
@@ -117,13 +118,16 @@
             활발한 활동을 펼쳐가고 있는 정보보안 동아리입니다.
           </p>
         </div> <!-- 소개-내용 -->
+
         <!-- 소개-주요 활동 -->
         <!-- 갖다 대면 커지게 애니메이션? -->
-        <div class="main-item__content main-icons d-flex flex-column p-4 mt-5">
+        <!-- 아이콘 색상 통일성있게 변경 -->
+        <!-- 아이콘 6개 -->
+        <div class="main-item__content main-icons container d-flex flex-column p-4 mt-5">
           <!-- 아이콘 1행 -->
-          <div class="main-icons__row d-flex justify-content-around">
+          <div class="main-icons__row row d-flex">
             <!-- 세션 -->
-            <div class="main-icons__col d-flex flex-column align-items-center">
+            <div class="main-icons__col col-md-4 d-flex flex-column align-items-center my-5">
               <img class="main-icons__icon" src="images/session.png"/>
               <div class="main-icons__text d-flex flex-column align-items-center">
                 <span class="text-center fs-4">세션</span>
@@ -134,7 +138,7 @@
               </div>
             </div>
             <!-- 스터디 -->
-            <div class="main-icons__col d-flex flex-column align-items-center">
+            <div class="main-icons__col col-md-4 d-flex flex-column align-items-center my-5">
               <img class="main-icons__icon" src="images/study.png"/>
               <div class="main-icons__text d-flex flex-column align-items-center">
                 <span class="text-center fs-4">스터디</span>
@@ -144,7 +148,7 @@
               </div>
             </div>
             <!-- 프로젝트 -->
-            <div class="main-icons__col d-flex flex-column align-items-center">
+            <div class="main-icons__col col-md-4 d-flex flex-column align-items-center my-5">
               <img class="main-icons__icon" src="images/project.png"/>
               <div class="main-icons__text d-flex flex-column align-items-center">
                 <span class="text-center fs-4">프로젝트</span>
@@ -155,9 +159,9 @@
             </div>
           </div>
           <!-- 아이콘 2행 -->
-          <div class="main-icons__row d-flex justify-content-between mt-5">
+          <div class="main-icons__row row d-flex">
             <!-- 대회 -->
-            <div class="main-icons__col d-flex flex-column align-items-center">
+            <div class="main-icons__col col-md-4 d-flex flex-column align-items-center my-5">
               <img class="main-icons__icon" src="images/contest.png"/>
               <div class="main-icons__text d-flex flex-column align-items-center">
                 <span class="text-center fs-4">대회</span>
@@ -168,7 +172,7 @@
               </div>
             </div>
             <!-- 대외활동 -->
-            <div class="main-icons__col d-flex flex-column align-items-center">
+            <div class="main-icons__col col-md-4 d-flex flex-column align-items-center my-5">
               <img class="main-icons__icon" src="images/activity.png"/>
               <div class="main-icons__text d-flex flex-column align-items-center">
                 <span class="text-center fs-4">대외활동</span>
@@ -180,7 +184,7 @@
               </div>
             </div>
             <!-- 친목 -->
-            <div class="main-icons__col d-flex flex-column align-items-center">
+            <div class="main-icons__col col-md-4 d-flex flex-column align-items-center my-5">
               <img class="main-icons__icon" src="images/etc.png"/>
               <div class="main-icons__text d-flex flex-column align-items-center">
                 <span class="text-center fs-4">친목</span>
@@ -221,23 +225,44 @@
             <div class="main-timeline__circle"></div>
           </div> 
           <!-- 글씨 부분 -->
-          <div class="main-text d-flex mt-4">
-            <!-- 날짜 -->
-            <div class="main-text d-flex flex-column me-5">
-              <h3 class="fs-4">2022-1</h3>
-              <h3 class="fs-4 mb-5">2022-Summer<br><br><br></h3>
-              <h3 class="fs-4 mt-4">2022-2</h3>
+          <div class="timeline-text container d-flex flex-column mt-4 mx-1">
+            <!-- 글씨 1행 -->
+            <div class="timeline-text__row row d-flex align-items-start mb-5">
+              <!-- 1행 1열 -->
+              <div class="timeline-text__col col-5">
+                <h3 class="fs-4">2022-1</h3>
+              </div>
+              <!-- 1행 2열 -->
+              <div class="timeline-text__col col-7">
+                <h3 class="text-start">악성코드와 네트워크 패킷 분석 정규세션</h3>
+              </div>
             </div>
-            <!-- 일정 -->
-            <div class="main-text d-flex flex-column">
-              <h3 class="fs-5">악성코드와 네트워크 패킷 분석 정규 세션</h3>
-              <p class="fs-5 mb-1">보안 동아리 연합 세미나<br>
+            <!-- 글씨 2행 -->
+            <div class="timeline-text__row row d-flex align-items-start mb-5">
+              <!-- 2행 1열 -->
+              <div class="timeline-text__col col-5">
+                <h3 class="fs-4">2022 summer</h3>
+              </div>
+              <!-- 2행 2열 -->
+              <div class="timeline-text__col col-7">
+              <p class="text-start">보안 동아리 연합 세미나<br>
                 보안 워크숍<br>
                 E-cops CTF 대회</p>
-              <h3 class="fs-5 mt-4">To be continued!</h3>
+              </div>
             </div>
-          </div> 
-        </div> <!-- 로드맵-내용 -->
+            <!-- 글씨 3행 -->
+            <div class="timeline-text__row row d-flex align-items-start mb-5">
+              <!-- 3행 1열 -->
+              <div class="timeline-text__col col-5">
+                <h3 class="fs-4">2022-2</h3>
+              </div>
+              <!-- 3행 2열 -->
+              <div class="timeline-text__col col-7">
+                <h3 class="text-start">To be continued!</h3>
+              </div>
+            </div>
+          </div> <!-- 글씨 부분 -->
+        </div> <!--로드맵-내용 -->
       </div> <!-- 로드맵 -->
 
     </main> <!-- ========= main 본문 ========== -->
@@ -245,7 +270,7 @@
 
     <!-- ========= footer ========== -->
     <footer class="d-flex justify-content-center py-4">
-      <h3 class="text-center">Message to JOIN</h3>
+      <h3 class="text-center fs-5">Message to JOIN</h3>
     </footer> <!-- ========= footer ========== -->
 
     
