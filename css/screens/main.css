@@ -126,7 +126,53 @@
 }
 
 
+/* contact 버튼 */
 
+.contact-btn{
+  width:60px;
+  height:60px;
+  position:fixed;
+  bottom:50px;
+  right:40px;
+  z-index:5;
+  border-radius:50%;
+  background-color: #1c8b5b;
+  border:none;
+  box-shadow: 5px 5px 15px 0px #496d5cb2;
+}
+
+.contact-btn-dark{
+  background-color: #204a28;
+}
+
+.contact-btn .contact-btn__icon{
+  position:absolute;
+  z-index: 6;
+  right:17px;
+  top:17px;
+} 
+
+.contact-btn .contact-btn__text{
+  position:absolute;
+  right:58px;
+  top:13px;
+  visibility: hidden;
+  z-index: 6;
+  font-size:13px;
+  font-weight: lighter;
+  line-height: 18px;
+  color:#ffffffd2
+}
+
+.contact-btn:hover{
+  width:220px;
+  height:60px;
+  border-radius: 30px;
+}
+
+.contact-btn:hover .contact-btn__text{
+  visibility: visible;
+}
 
 
 
