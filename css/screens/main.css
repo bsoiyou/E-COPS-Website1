@@ -1,81 +1,123 @@
-/* =====type animation ===== */
-.type-ani{
-  width:auto;
-}
 
-.typing h2{
-  height:35px;
 
-}
-        
-        .typing::before {
-          content: "";
-          position: absolute;
-          top: 0;
-          right: 0;
-          width: 5px;
-          height: 80%;
-          background: #ffffff;
-          animation: cursorBlink 0.8s steps(3) infinite;
-        }
 
-        @keyframes cursorBlink {
-          0%,
-          75% {
-            opacity: 1;
+/* =====type animation & media query ===== */
+@media (min-width:800px) {
+  .main-banner{
+    display: flex;
+    align-items: center;
+  }
+
+  .main-banner__text{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+  }
+
+  .main-banner__basic-text {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+  }
+
+  .main-banner__ani-text{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+  }
+
+  .type-ani{
+    width:auto;
+  }
+  
+  .typing h2{
+    height:35px;
+  
+  }
+          
+          .typing::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            right: 0;
+            width: 5px;
+            height: 80%;
+            background: #ffffff;
+            animation: cursorBlink 0.8s steps(3) infinite;
           }
-
-          76%,
-          100% {
-            opacity: 0;
+  
+          @keyframes cursorBlink {
+            0%,
+            75% {
+              opacity: 1;
+            }
+  
+            76%,
+            100% {
+              opacity: 0;
+            }
           }
-        }
-        
-        .typing {
-          position: relative;
-          -webkit-box-reflect: below 1px linear-gradient(transparent, #3333);
-        }
-
-        .typing h2 {
-          position: relative;
-          color: #ffffff;
-          letter-spacing: 5px;
-          font-size: 3rem;
-          overflow: hidden;
-          margin-bottom: 0;
-          animation: type 5s steps(15) infinite;
-        }
-
-        @keyframes type {
-          0%,
-          100% {
-            width: 0px;
+          
+          .typing {
+            position: relative;
+            -webkit-box-reflect: below 1px linear-gradient(transparent, #3333);
           }
-
-          30%,
-          60% {
-            width: 550px;
-          }
-        }
-
-        @media (max-width: 330px) {
+  
           .typing h2 {
+            position: relative;
+            color: #ffffff;
+            letter-spacing: 5px;
             font-size: 3rem;
-            animation: type 5s steps(10) infinite;
+            overflow: hidden;
+            margin-bottom: 0;
+            animation: type 5s steps(15) infinite;
           }
-
+  
           @keyframes type {
             0%,
             100% {
               width: 0px;
             }
-
+  
             30%,
             60% {
-              width:550px;
+              width: 550px;
             }
           }
-        }
+  
+          @media (max-width: 330px) {
+            .typing h2 {
+              font-size: 3rem;
+              animation: type 5s steps(10) infinite;
+            }
+  
+            @keyframes type {
+              0%,
+              100% {
+                width: 0px;
+              }
+  
+              30%,
+              60% {
+                width:550px;
+              }
+            }
+          }
+
+          
+#main-dark-page .main-banner__text{
+  left:430px;
+  width:auto;
+}
+
+
+#main-dark-page .main-banner__logo {
+  left:60px;
+}
+
+
+  
+}
 /* =====type animation ===== */
 
 
@@ -114,16 +156,7 @@
 #main-dark-page .main-banner__logo , #main-dark-page .main-banner__text{
   position:absolute;
 }
-
-#main-dark-page .main-banner__text{
-  left:430px;
-  width:auto;
-}
-
-
-#main-dark-page .main-banner__logo {
-  left:60px;
-}
+  
 
 .typing h2{
   /* font-size:22px;  */
@@ -207,13 +240,13 @@
 /* contact 버튼 */
 
 .contact-btn{
-  width:60px;
+  width:150px;
   height:60px;
   position:fixed;
-  bottom:50px;
+  bottom:30px;
   right:40px;
   z-index:5;
-  border-radius:50%;
+  border-radius:30px;
   background-color: #1c8b5b;
   border:none;
   box-shadow: 5px 5px 15px 0px #496d5cb2;
@@ -230,7 +263,19 @@
   top:17px;
 } 
 
-.contact-btn .contact-btn__text{
+.contact-btn .contact-btn__text-before{
+  position:absolute;
+  right:65px;
+  top:20px;
+  z-index: 6;
+  visibility: visible;
+  font-size:17px;
+  font-weight: lighter;
+  line-height: 18px;
+  color:#ffffffd2;
+}
+
+.contact-btn .contact-btn__text-after{
   position:absolute;
   right:58px;
   top:13px;
@@ -248,8 +293,12 @@
   border-radius: 30px;
 }
 
-.contact-btn:hover .contact-btn__text{
+.contact-btn:hover .contact-btn__text-after{
   visibility: visible;
+}
+
+.contact-btn:hover .contact-btn__text-before{
+  visibility: hidden;
 }
 
 

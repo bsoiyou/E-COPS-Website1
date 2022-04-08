@@ -104,7 +104,7 @@
     <!-- ======== 상단 nav bar ======== -->
 
     <!-- ======== dark 메인 배너 ======== -->
-    <header class="main-banner d-flex container-fluid p-0 align-items-center">
+    <header class="main-banner container-fluid p-0">
       <!-- 배너 배경 이미지 -->
       <img class="main-banner__img" src="images/dark-mode-bg.png" />
       <!-- 배너 로고 -->
@@ -112,20 +112,14 @@
         <img src="images/로고흰색.png" />
       </div>
       <!-- 배너 텍스트 (오른쪽 박스) -->
-      <div
-        class="main-banner__text d-flex flex-column align-items-start press-font"
-      >
+      <div class="main-banner__text press-font">
         <!-- 애니메이션 없는 글자 -->
-        <div
-          class="main-banner__basic-text d-flex flex-column align-items-start"
-        >
+        <div class="main-banner__basic-text">
           <h2 class="text-center text-light mb-4">catchphrase catchphrase</h2>
           <h2 class="text-center text-light mb-5">catchphrase</h2>
         </div>
         <!-- 애니메이션 있는 글자 -->
-        <div
-          class="main-banner__container main-banner__ani-text d-flex flex-column align-items-center"
-        >
+        <div class="main-banner__ani-text">
           <div class="type-ani">
             <div class="typing">
               <h2>EWhaControlOfSecurity</h2>
@@ -293,7 +287,8 @@
 
     <!-- ======== Contact 버튼 ======== -->
     <div class="contact-btn contact-btn-dark">
-      <span class="contact-btn__text text-end"
+      <span class="contact-btn__text-before">Contact</span>
+      <span class="contact-btn__text-after text-end"
         >mjk4534@ewhain.net <br />
         010-7186-4534
       </span>
