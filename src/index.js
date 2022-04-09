@@ -1,6 +1,5 @@
 import express from "express";
 import morgan from "morgan";
-import Router from "./route/Router";
 const path = require("path");
 const PORT=3456;
 
@@ -13,6 +12,13 @@ app.listen(PORT, handleListening);
 app.use(express.static("../client"));
 app.use(logger);
 app.use(express.urlencoded({extended:true}));
-app.use("/", Router);
+app.get("/", function(req,res) {
+    res.sendFile(path.resolve(__dirname + "../../../client/main.html"));
+ });
+ app.get("/members", function(req,res) {
+    res.sendFile(path.resolve(__dirname + "../../../client/members.html"));
+ });
+ 
+
 
 export default app;
