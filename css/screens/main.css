@@ -85,7 +85,7 @@
             }
           }
   
-          @media (max-width: 330px) {
+          @media (max-width: 500px) {
             .typing h2 {
               font-size: 3rem;
               animation: type 5s steps(10) infinite;
@@ -116,10 +116,34 @@
 }
 
 
+.typing h2{
+  font-size:20px; 
+  /* font-size:1.8vw; */
+}
   
 }
-/* =====type animation ===== */
+/* =====배너 모바일 반응형 ===== */
+@media (min-width:300px) and (max-width:1000px){ 
+  #main-dark-page .main-banner__logo{
+    top:40%;
+    left:50%;
+    transform: translate(-50%, -50%);
+  } 
+  #main-dark-page .main-banner__text{
+    top:80%;
+    left:50%;
+    transform: translate(-50%, -50%);
+  }
 
+  .main-banner__basic-text{
+    display:none;
+  }
+
+  .main-banner__ani-text{
+    font-size:18px;
+  }
+
+}
 
 
 #main-page{
@@ -158,10 +182,6 @@
 }
   
 
-.typing h2{
-  /* font-size:22px;  */
-  font-size:1.8vw;
-}
 
 
 /* #main-dark-page .main-banner__container{
